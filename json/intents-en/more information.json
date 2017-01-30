@@ -1,0 +1,39 @@
+{
+  "templates": [
+    "more information"
+  ],
+  "userSays": [
+    {
+      "id": "0f9bdfc5-dd73-4b1b-8c05-9c72be86daeb",
+      "data": [
+        {
+          "text": "more information"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "e1712d8c-6c89-4513-a517-45d8f286168b",
+  "name": "more information",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "What kind of information are you searching for?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

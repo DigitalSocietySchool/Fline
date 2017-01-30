@@ -1,0 +1,83 @@
+{
+  "templates": [
+    "talk",
+    "chat",
+    "boring",
+    "bored",
+    " keep chatting"
+  ],
+  "userSays": [
+    {
+      "id": "50bc20ba-5427-4bfb-94ca-3e2628377297",
+      "data": [
+        {
+          "text": "talk"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "44cf0dde-a724-4b46-9bc1-b473baf701a9",
+      "data": [
+        {
+          "text": "chat"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e34664b8-98d1-4caf-803a-2b4dd80d656c",
+      "data": [
+        {
+          "text": "boring"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4f4aa252-e1db-40c8-a80d-2d90694a80a3",
+      "data": [
+        {
+          "text": "bored"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ab389cee-4ffa-4f63-9bdd-90cea3ed056e",
+      "data": [
+        {
+          "text": " keep chatting"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "671b05bb-4729-40f2-9e23-0c6efb1c3610",
+  "name": " keep chatting",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "What would you like to talk about?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

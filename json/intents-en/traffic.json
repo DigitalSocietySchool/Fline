@@ -1,0 +1,39 @@
+{
+  "templates": [
+    "Traffic"
+  ],
+  "userSays": [
+    {
+      "id": "d3317251-d9c1-44c7-98ea-5cadad07694a",
+      "data": [
+        {
+          "text": "Traffic"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "5bd3dc04-64ff-4e19-bf6c-6d7ad6f3d87b",
+  "name": "traffic",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here you can see the actual traffic information."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

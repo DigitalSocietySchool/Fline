@@ -1,0 +1,43 @@
+{
+  "templates": [
+    "personalised info"
+  ],
+  "userSays": [
+    {
+      "id": "98b7b88c-4946-49da-9c8e-0dd9fd265609",
+      "data": [
+        {
+          "text": "personalised info"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ccedb5eb-9f9a-4f93-a034-b6205d063c8c",
+  "name": "personalised info",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "To get personalised information, please upload your plane ticket."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

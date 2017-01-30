@@ -1,0 +1,246 @@
+<!--
+Author: Quinnard Stewart
+Company: MediaLAB Amsterdam
+Dates: August 31st 2016 - January 31st 2017
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+        <link rel="apple-touch-icon" sizes="57x57" href="src/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="src/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="src/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="src/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="src/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="src/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="src/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="src/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="src/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="src/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+        <link rel="manifest" href="src/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="src/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <title>Fline</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+      
+	
+       		<script type="text/javascript" src="lib/grid.js"></script>
+			<script type="text/javascript" src="lib/version.js"></script>
+			<script type="text/javascript" src="lib/detector.js"></script>
+			<script type="text/javascript" src="lib/formatinf.js"></script>
+			<script type="text/javascript" src="lib/errorlevel.js"></script>
+			<script type="text/javascript" src="lib/bitmat.js"></script>
+			<script type="text/javascript" src="lib/datablock.js"></script>
+			<script type="text/javascript" src="lib/bmparser.js"></script>
+			<script type="text/javascript" src="lib/datamask.js"></script>
+			<script type="text/javascript" src="lib/rsdecoder.js"></script>
+			<script type="text/javascript" src="lib/gf256poly.js"></script>
+			<script type="text/javascript" src="lib/gf256.js"></script>
+			<script type="text/javascript" src="lib/decoder.js"></script>
+			<script type="text/javascript" src="lib/qrcode.js"></script>
+			<script type="text/javascript" src="lib/findpat.js"></script>
+			<script type="text/javascript" src="lib/alignpat.js"></script>
+			<script type="text/javascript" src="lib/databr.js"></script>
+            <script type="text/javascript" src="lib/BigInteger.min.js"></script>
+			<script type="text/javascript" src="lib/zxing-pdf417.js"></script>
+            
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                       
+            <script src="ticketScanner.js"> </script> 
+			<script src="qrScanner.js"> </script>
+       
+    </head>
+    
+    <!--Welcome screen-->
+    <div id="welcome" class="welcome" height=100%>
+        <!--<img class="welcome-img" src="src/family-image.png" />-->
+        <img class="welcome-img" />
+        <h1>Hello, can we help you..</h1>
+        <p class="welcome-p"> To get in touch with your baggage</p>
+        
+        <!-- Y/N buttons if Y to welcome chat page--> 
+        <div class="options-btn-container">
+        <label class="options-btn" for="options-btn-y">
+            <div>
+            		<p>Yes</p>
+            </div>
+        </label>
+        <label class="options-btn" for="options-btn-n">
+            <div>
+           			 <p>No</p>
+            </div>
+        </label>
+        
+        <input id="options-btn-y" type="button"  />
+        <input id="options-btn-n"type="button"  />
+        
+        </div>
+             </div>   
+   
+    <!-- Chat buttons div --> 
+    <div id="chat-btn-container" class="chat-btns"> 
+            <div id="scan-form" onLoad="load()"> 
+            		<canvas id="qr_canvas"></canvas>
+       				<form id="tpOne_form">
+                      
+                      <label class="scanner-label" for="scan-btn"><div >
+                      <p>Upload ticket</p>
+                      </div>
+                      </label>
+                      
+                      <label class="scanner-label" for="upload-btn">
+                      <div>
+                	  <p>Scan ticket</p>
+                      </div>
+                      </label>
+                      
+                      <input type="file"  id="scan-btn" accept="image/*" capture="camera" />
+                      <input type="file"  id="upload-btn" accept="image/*" />                    
+                		<div id="result"> </div><br>
+               			<img id="scanned-img" src="" />                      
+        			</form>
+            </div>
+            <div class="decodedText"></div>      
+      
+    </div>
+        
+    <!--pop-up-->
+    <div id="pop-up" class="pop-up " width=100% height=100%>
+       <div id="popup-container" class="popup-container"> 
+       <div class="info">
+       <div id="basic-info" class="basic-info"></div>
+       <div id="flight-info" class="flight-info"></div>
+       <div id="ticket-img" class="ticket-img"></div>
+       </div>
+       </div>
+       <div class="popup-btn-container">       
+       <label class="confirm-btn" for="next-div"><div><p> Confirm</p></div></label>
+       <input id="next-div" type="button" style="display:none" /></div>
+    </div>
+    
+    <!-- Main menu --> 
+    <div id="main-menu" class="main-menu">
+       
+    <div> 
+    <a id="menu-main-btn-hidden" class="menu-btn"  ><img src="src/menu.png" width="20px" height="20px"/> </a> 
+    </div>
+    		       <div class="main-menu-btns ">                     
+    					<!-- buttons for each screen -->
+   					    <a id="main-menu-btn-chat" class="main-menu-btn"><div width=100%><h3>Chat</h3></div></a>    
+    					<a id="main-menu-btn-family" class="main-menu-btn"><div width=100%><h3>The Family</h3></div></a>
+                        <a id="main-menu-btn-map" class="main-menu-btn"><div width=100%><h3>Map</h3></div></a>
+    					<a id="main-menu-btn-about" class="main-menu-btn"><div width=100%><h3>About</h3></div></a>
+                        
+   						
+                        </div>
+    </div>
+    
+    <!-- Chatbot-->
+    <div id="chatbot" class="chatbot screen" height=100% > 
+                
+      		<div id="content" class="content"   >
+                <div id="nav-bar" class="nav-bar"  >  
+                	<a id="menu-btn" class="menu-btn" ><img src="src/menu.png" width="20px" height="20px"/> </a> 
+                	
+                   	<a id="main-menu-btn-family" >
+                    	<div class="bot-icon-link">
+                    			<img id="bot-icon" class="bot-icon"  />
+                        </div>
+                        </a>
+                 	
+               </div>
+         	<div id="chat" class="chat"> 
+            </div>
+    			</div> 
+                
+            <div id="post-form" class="form" >
+            	<form> 
+       				<textarea id="message-input" type="text" placeholder="Type a message.."></textarea>               
+                		<img id="post-btn" src="src/send.png">
+       			</form>
+           </div>
+           <div id="result"> </div>
+                                              
+    </div>
+           
+            </div>
+       
+    </div>
+            </div>
+
+<!-- bot Family -->
+<div id="family" class="family screen" height=100% > 
+ 	<div id="family-nav-bar" class="nav-bar"> 
+          <a id="menu-btn"class="menu-btn" ><img src="src/menu.png" width="20px" height="20px"/></a>
+          <a  id="bot-link-activity"><div class="bot-icon-link-activity"><img id="bot-icon-activity" class="bot-icon-activity" /></div></a>
+    </div>
+    
+    
+    <div id="family-content" class="family-content">
+        <div class="slider-control-container"> 
+            <div id="prev-slide" class="prev-slide" onClick="nextSlider(-1)"><div><img src="src/-.png"/></div></div>
+            <div id="next-slide" class="next-slide" onClick="nextSlider(1)"><div><img src="src/-.png"/></div></div>
+        </div>
+    	<div id="family-content-list" class="family-content-list"></div>
+    	<div id="family-content-list-container" class="family-content-list-container">
+    	<div id="dots-container" class="dots-container"> </div></div>
+    </div>
+     
+    <div id="family-activity" class="family-activity">
+        <div id="activity-nav" class="activity-nav">
+        	<div id="back-btn" class="back-btn">
+            <img src="src/-.png"/>
+            </div>
+        	<div>
+            <h1></h1>
+            </div>
+        </div>
+        
+        <div id="activity-container" class="activity-container"> </div>
+    </div> 
+    
+
+	</div>
+    
+    <!-- About -->
+    <div id="about" class="screen"> 
+            
+          	<div id="about-nav-bar" class="nav-bar"  >  
+                	<a id="menu-btn" class="menu-btn" ><img src="src/menu.png" width="20px" height="20px"/> </a> 
+                    <h2>About</h2>                	
+                </div>
+           <div id="about-container" class="about-container">
+               <div class="about-container-content">
+                <div class="about-container-img">
+                	<img src="src/about-resource/logo_2.png" />
+                </div>  
+                 <hr>             
+                 <p class="about-motto"> From departure to airline. <br>A line of people walking,<br> searching,in line,<br> to get their bag.<br><br> Fline, the only <br>line you should be in.  </p> 
+                 <hr>                
+               <p class="about-description"> Fline. is the ChatBot family of Schiphol Airport. From the landing to the arrival hall, the family Belt provides you a personalised assistance every step of your way. Stay connected with your bag thanks to real-time notifications, find the fastest way to reach the city center and discover the stories of Anna, Oddie, Chris & Henk Belt.
+
+                    <br><br>
+					<span>Welcome to Schiphol, welcome to the family !<span> 
+			</p>      
+          </div> 
+          </div>
+    
+    </div>
+			<!-- script files for excuting  the app -->
+    		<script type="text/javascript" src="js/app.js"></script>
+            <script type="text/javascript" src="js/api.js"> </script>  
+          	<script type="text/javascript" src="js/family.js"></script>            
+                        
+        </body>
+        
+    
+</html>

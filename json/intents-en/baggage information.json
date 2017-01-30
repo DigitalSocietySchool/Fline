@@ -1,0 +1,43 @@
+{
+  "templates": [
+    "where baggage"
+  ],
+  "userSays": [
+    {
+      "id": "02dbf6d8-195a-4e63-bc48-81f8d6033ab0",
+      "data": [
+        {
+          "text": "where baggage"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "9387309d-7163-450b-946a-c58974beaa1b",
+  "name": "baggage information",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Your baggage is being unloaded from the plane. This means it can take a while before it gets there.",
+            "I will keep you updated about your baggage progress."
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

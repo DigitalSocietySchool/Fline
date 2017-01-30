@@ -1,0 +1,107 @@
+{
+  "templates": [
+    "transport",
+    "go to @sys.geo-city:geo-city ",
+    "go in @sys.geo-city:geo-city centraal",
+    "@sys.address:address "
+  ],
+  "userSays": [
+    {
+      "id": "d1a4a257-1f1d-47f4-ae39-c390cbbab783",
+      "data": [
+        {
+          "text": "transport"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "48edf4be-a3a9-441f-a9ca-0bc4225f709a",
+      "data": [
+        {
+          "text": "go to "
+        },
+        {
+          "text": "amsterdam",
+          "alias": "geo-city",
+          "meta": "@sys.geo-city",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fc11eb83-5388-400f-bc90-9554c96e5191",
+      "data": [
+        {
+          "text": "go in "
+        },
+        {
+          "text": "amsterdam",
+          "alias": "geo-city",
+          "meta": "@sys.geo-city",
+          "userDefined": false
+        },
+        {
+          "text": " centraal"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c21ae725-100e-460f-adeb-ae0c2c18812c",
+      "data": [
+        {
+          "text": "city center",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "04a93250-b14c-4fa4-89ed-2f03cc51f3a8",
+  "name": "Reaching city center",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.geo-city",
+          "name": "geo-city",
+          "value": "$geo-city",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "There\u0027s many way to reach the city center. The fastest is the train that depart from Schiphol plaza where you can buy a ticket at the machines or at the desk."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

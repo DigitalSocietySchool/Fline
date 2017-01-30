@@ -1,0 +1,64 @@
+{
+  "templates": [
+    "@information:information ",
+    "Amsterdam central"
+  ],
+  "userSays": [
+    {
+      "id": "f86b243d-bb8c-4ffd-906d-66137eba5dac",
+      "data": [
+        {
+          "text": "train",
+          "alias": "information",
+          "meta": "@information",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a7d579f2-d7c8-4217-b90e-ebe972d5171c",
+      "data": [
+        {
+          "text": "Amsterdam central"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "3d8e9981-a7be-46a5-bb5c-f176f908af46",
+  "name": "train",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@information",
+          "name": "information",
+          "value": "$information",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "To know about the train schedules"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

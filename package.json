@@ -1,0 +1,29 @@
+{
+  "name": "baggagebot",
+  "version": "1.0.0",
+  "description": "bot",
+  "main": "index.js",
+  "dependencies": {
+    "apiai": "^3.0.3",
+    "axios": "^0.15.3",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qjls/BaggageBot.git"
+  },
+  "keywords": [
+    "baggage"
+  ],
+  "author": "Quinnard Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qjls/BaggageBot/issues"
+  },
+  "homepage": "https://github.com/qjls/BaggageBot#readme"
+}

@@ -1,0 +1,55 @@
+{
+  "templates": [
+    "Where can I find more information about my lost baggage",
+    "lost baggage"
+  ],
+  "userSays": [
+    {
+      "id": "de5ca08b-75cd-4d70-9f36-18c4a175b26a",
+      "data": [
+        {
+          "text": "Where can I find more information about my lost baggage"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "430da729-aaa8-4d3e-8493-a25f21327ec8",
+      "data": [
+        {
+          "text": "lost baggage"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "8b5ae4fa-8d41-49d2-85fb-3670fe2d23c8",
+  "name": "lost bag",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "locate.handler",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "That’s really unfortunate... Of course, I’m just a chatbot but I’ve send a notice to your handler Aviaport whom will help you further."
+        },
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

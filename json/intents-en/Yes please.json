@@ -1,0 +1,39 @@
+{
+  "templates": [
+    "Yes please"
+  ],
+  "userSays": [
+    {
+      "id": "d9dd7196-291c-42be-9fbe-2f56d02e6ece",
+      "data": [
+        {
+          "text": "Yes please"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "592e6918-3ce1-43d4-8717-14f0dc750f82",
+  "name": "Yes please",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "I see that your bag is currently being unloaded from the plane. It will take some time to arrive. I will send you a reminder if it is about to arrive."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

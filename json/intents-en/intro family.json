@@ -1,0 +1,43 @@
+{
+  "templates": [
+    "intro family"
+  ],
+  "userSays": [
+    {
+      "id": "e610ad72-6157-4e12-924d-40cb60d94cae",
+      "data": [
+        {
+          "text": "intro family"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "27e6f0f0-89df-4e92-abc5-fdf1666bdee1",
+  "name": "intro family",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

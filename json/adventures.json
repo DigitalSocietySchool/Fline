@@ -1,0 +1,235 @@
+{
+  "2": {
+    "botName": "Henk","color":  "#F28B9E",
+    "beltNumber": "2",
+    "backgroundbackgroundcolor": "#f8c2cc","icon":  "henk-bot-icon.png",
+    "activities": [
+
+      {
+        "id": "0",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "1",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "2",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "3",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "4",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "5",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "6",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "7",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "8",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "9",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      }
+    ]
+
+  },
+  "4": {
+    "botName": "Anna", "color":  "#F7E114",
+    "beltNumber": "4",
+    "backgroundcolor": "#fbee84", "icon":  "anna-bot-icon.png",
+    "activities": [
+
+      {
+        "id": "0",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "1",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "2",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "3",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "4",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "5",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "6",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "7",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "8",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "9",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      }
+    ]
+  },
+  "6": {
+    "botName": "Chris","color":  "#F49F16",
+    "beltNumber": "6",
+    "backgroundcolor": "#f9cd85","icon":  "chris-bot-icon.png",
+    "activities": [
+
+      {
+        "id": "0",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "1",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "2",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "3",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "4",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "5",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "6",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "7",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "8",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "9",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      }
+    ]
+  },
+  "7": {
+    "botName": "Oddy", "color":  "#9121E8",
+    "beltNumber": "7",
+    "backgroundcolor": "#c68bf3","icon":  "oddy-bot-icon.png",
+    "activities": [
+
+      {
+        "id": "0",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "1",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "2",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "3",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "4",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "5",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "6",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "7",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "8",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      },
+      {
+        "id": "9",
+        "timestamp": "12.1 2017",
+        "activity": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+      }
+    ]
+  }
+}

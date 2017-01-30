@@ -1,0 +1,33 @@
+{
+  "templates": [],
+  "userSays": [],
+  "id": "8cb35662-50d4-41c8-a802-96b922f039f1",
+  "name": "Default Fallback Intent",
+  "auto": false,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "As my sister Anna says : \"Chris, you should eat more fish to boost your memory ! I should have listen to her because I can’t remember the meaning of what you sent me...",
+            "I am young and I’ve still a lot to learn. Especially vocabulary…Would you mind to reformulate ?",
+            "I am afraid I can\u0027t find the answer.",
+            "I am confused, what do you mean ?",
+            "Sorry, I am just a chatbot (and I may not understand)"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": []
+}

@@ -1,0 +1,50 @@
+{
+  "templates": [
+    "waiting",
+    "to do"
+  ],
+  "userSays": [
+    {
+      "id": "6729c87e-73b4-4926-bbe7-01fc797b3a54",
+      "data": [
+        {
+          "text": "waiting"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "eb640d1b-81d2-45d9-9e92-0712b63427af",
+      "data": [
+        {
+          "text": "to do"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "0f5f848c-7348-4648-ba04-3955e8ea9365",
+  "name": "to do",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Would you like to do something in the meantime?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

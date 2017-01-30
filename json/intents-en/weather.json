@@ -1,0 +1,138 @@
+{
+  "templates": [
+    "thunder",
+    "stormy",
+    "windy",
+    "snow",
+    "foggy",
+    "hazy",
+    "cloudy",
+    "rain",
+    "sunny",
+    "weather"
+  ],
+  "userSays": [
+    {
+      "id": "3eeced4e-9675-4433-ae48-4cf6767ccc8b",
+      "data": [
+        {
+          "text": "thunder"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1999f501-abdd-42d8-9b90-f572ee488ae5",
+      "data": [
+        {
+          "text": "stormy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "030b8f16-616d-4cdd-b955-3a6ec6e193e1",
+      "data": [
+        {
+          "text": "windy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e2e03def-ece2-405b-88ab-2ce5bdcfdfb5",
+      "data": [
+        {
+          "text": "snow"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "97918a29-e76f-4ef9-9568-b272859547a0",
+      "data": [
+        {
+          "text": "foggy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7118445e-1e0b-494d-8043-e7d90c8866cf",
+      "data": [
+        {
+          "text": "hazy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1a9c6098-f130-48eb-a1e9-bdcaa952cfb4",
+      "data": [
+        {
+          "text": "cloudy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c2934896-a014-4f43-99e8-02e8df19a1bc",
+      "data": [
+        {
+          "text": "rain"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "899eb45c-671f-45dd-83c5-88c195e621e0",
+      "data": [
+        {
+          "text": "sunny"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c99813cc-5a86-4195-9e65-29a4a8a0932b",
+      "data": [
+        {
+          "text": "weather"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "b21159ea-6c87-4468-9f6e-ca5824f7c0b7",
+  "name": "weather",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Currently the weather is.."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

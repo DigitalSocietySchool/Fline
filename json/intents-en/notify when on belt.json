@@ -1,0 +1,43 @@
+{
+  "templates": [
+    "notify when on belt"
+  ],
+  "userSays": [
+    {
+      "id": "fcd470ea-eb97-47e0-b9c4-2c4762b1f6e4",
+      "data": [
+        {
+          "text": "notify when on belt"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "5ddf4b03-3ecb-43db-947c-8995bd589b40",
+  "name": "notify when on belt",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "I will send you a notification as soon as your baggage is about to arrive."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

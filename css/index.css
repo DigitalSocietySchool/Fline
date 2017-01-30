@@ -1,0 +1,1467 @@
+@charset "utf-8";
+/*Stylesheet for whole app*/
+/*
+Author: Quinnard Stewart
+Company: MediaLAB Amsterdam
+Dates: August 31st 2016 - January 31st 2017
+*/
+
+/*font family */
+p, a, h1, h2, h3,h4, .option-button, .options-btn, textarea {
+	font-family: 'Roboto', Arial, Verdana;
+	color: #000;
+}
+/*default  app margins */
+html body {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: hidden;	
+}
+body {
+	overflow: hidden;
+	width: 100vw;
+	margin: 0px;
+}
+.screen {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	display: block;
+	z-index:96;
+	position: relative;
+	background: #FFFFFF;
+}
+#chatbot {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: block;
+	z-index:1;
+	position: relative;
+	background: #FFFFFF;
+}
+#family{
+	z-index:95;
+}
+.nav-bar h3 {
+	text-align: center;
+	padding: 2px;
+}
+.app-header {
+	width: 100vw;
+	height: 10vh;
+	background: #A2A2A2;
+}
+.nav-bar {
+	display: block !important;
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 8vh;
+    z-index: 90;
+    border-bottom: solid 1px #d3d3d3;
+	background: #FFFFFF; 
+}
+.menu-btns {
+	display: inline-block;
+	width: 100vw;
+	margin: 0px;
+}
+.main-menu {
+	display: block;
+	position: fixed;
+	overflow-y: hidden;
+	overflow:hidden;
+	overflow-x: hidden; 
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255,255,255,0.90);
+	z-index: 100;
+	margin: 0px;
+}
+.main-menu-btns {
+	margin: 25vh 0px 10vh 40vw;
+    width:30vw;
+}
+.main-menu-btns a {
+	text-align: left;
+	text-decoration: none;
+	color: #000;
+	margin: 20px 20px 20px 0px;
+	background:#FFFFFF;
+}
+.main-menubtns a div {
+	height: 10vh;
+}
+.chatbot {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+}
+#menu-items {
+	break-after: avoid-page;
+}
+.welcome-img{
+	content: url(http://145.92.221.9/src/family-image.png); 
+}
+.main-menu-btn {
+	width: 49vw;
+	height: 45vh;
+}
+.typing-dots {
+	padding-left: 10px;
+}
+.typing-dots circle {
+	background: #A2A2A2;
+}
+.header-title h2 {
+	background: #A2A2A2;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 5px 0px 0px 0px;
+}
+#chat-btn-container, #chat-btns {
+	height: 20vh;
+	display: block;
+	background:none;
+	position:fixed;
+	z-index:60;
+	bottom:0;	
+}
+#scan-btn, #upload-btn, #confirm-btn, #options-btn-y, #options-btn-n {
+	display: none; 
+}
+#scan-form {
+	height: inherit;
+}
+.scanner-label div p{
+	display: inline-block;
+	position: relative;
+}
+.message-container{
+	width: 98vw;
+    display: table;
+    position: relative;
+    margin: 10px 1vw;
+}
+.user-message-container, .bot-message-container {
+	max-width:65vw; 
+	padding: 0px 25px; 
+}
+.user-message-container{
+	float:right;
+}
+.bot-message-container{
+	float:left;
+}
+#tpOne_form{
+	margin-top: 0;
+	background:#FFFFFF;	
+}
+.chat-btns-container{
+	margin-top: 0;
+	background:#FFFFFF;
+	border-top:solid #B3B3B3 1px;
+}
+#scan-container {	
+	background: none;	
+}
+.chat-btnss-container{
+	background: #FFFFFF; 
+	display: block; 
+    bottom: 0; 
+	position: fixed;
+	padding-top:2vh;	
+}
+.chat-btnss-container label div{
+	margin: 3vh 25vw;
+    width: 50vw;
+    height: 5vh;
+    background: #EAE9F2;
+    text-align: center;
+    padding: 3px;
+}
+.chat-btnss-container label div p{
+	margin:5px;
+}
+.chat-btnss-container input{
+	display:none;
+}
+.scan-form {
+	display: block;
+    position: fixed;
+    height: 17vh;
+    width: inherit;
+    bottom: 0;
+    background: #FFFFFF;
+} 
+#qr_canvas {
+	display: none;
+}
+#footer {
+	width: 100vw;
+	align: bottom;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+}
+.page-header {
+	width: 100vw;
+	height: 10vh;
+	background: #A2A2A2;
+	margin-bottom: 0px;
+}
+.menu-btn img, .bot-icon {
+	vertical-align:middle;
+}
+#chat, .about-container {
+	width: 100vw;
+    display: block;
+    position: fixed;
+    top: 8vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+	margin-top: 10px;
+    z-index: 1;
+	background: #FFFFFF;
+}
+#chat {
+	max-height: 70vh;
+	margin-top: 10px;
+}
+#content-frame {
+	display: block;
+	width: 80vw;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #FFFFFFF;
+}
+.form {
+	display: block ;
+	position: fixed;
+	bottom: 0px;
+	z-index: 55;
+	width: 100vw;
+	margin-top: 1px;
+	border-top: solid #B3B3B3 1px;
+}
+.user-message , .bot-message{
+	padding: 2px 5px 0px 5px;
+	margin: 5px;
+}
+.bubble .user p { 
+	-webkit-margin-before: 0em;
+	-webkit-margin-after:0em;
+	padding:1em;
+	text-align: left;
+	display:table; 	
+	word-wrap:normal;
+}
+.bubble .bot p { 
+	-webkit-margin-before: 0em;
+	-webkit-margin-after:0em;
+	padding:1em;
+	text-align: left;
+	display:table;	
+	word-wrap:normal;
+	max-width: 60vw;	
+}
+.bubble {
+	position: relative;   
+    padding: 2px 2px 2px 5px;
+    border-radius: 5px;    
+    word-wrap: break-word;
+    word-break: normal;
+    white-space: normal;
+    clear: both;
+    resize: both;
+}
+.bot-bubble p {
+	color:#000000;
+}
+.bot-bubble p a {
+	color:#000000;
+	text-decoration:none;
+	font-weight: bold; 
+}
+.user-bubble p {
+	color:#000000;
+}
+.typing-bubble {
+	position: relative;
+	width: 15vw; 
+	padding: 2px 2px 2px 2px;
+	border-radius: 5px;
+	margin: 5px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+.user-bubble {
+	background: #EAE9F2;
+    float: right;
+    margin-bottom: 20px; 
+}
+.bot-bubble {	
+    float: left;
+    margin-bottom: 0px; 
+}
+.bot-bubble:after {
+    top: 0px;
+    left: -7px;
+    content: " ";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.user-bubble:after {
+	top: 0px;
+	right: -4px;
+	content: " ";
+	position: absolute;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-rigth-width: 5px;
+	border-top: 25px solid #EAE9F2;
+	border-top-width: 10px;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.typing-bubble:after {
+	top: 0px;
+	left: -7px;
+	content: " ";
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.option-button input {
+	float: right;
+	margin-right: 5px;
+}
+.option-button {
+	background: #6968FF;
+}
+.container {
+	padding: 0px auto 0px auto;
+	text-align: center;
+}
+.bot-timestamp, user-timestamp {
+	margin-bottom: 10px;
+    text-align: end;
+}
+.options-btn-container a {
+	display:inline-block;	
+	width: 10vw;
+	height: 5vh;	
+}
+.options-btn-container a div {	
+	height:inherit; 
+	background: #FFFFFF;
+	border: 1px solid #4D4D4D;
+	border-radius: 2px;	
+}
+.options-btn :hover, .options-btn :active,.scanner-label :hover, .scanner-label :active,.confirm-btn :hover,.confirm-btn :active{
+	background: #F9C728;
+	border:none;
+}
+.options-btn{
+	width: 15vw;
+	height: inherit; 
+	display:inline-block;	
+	border-radius: 2px;
+	text-align:center;		
+	padding:0px;
+	margin-right: 10px;
+}
+.options-btn div p{
+	padding: 5px;   
+    border: solid 1px;
+	border-radius: 4px;
+}
+.welcome h1{
+	margin: 0px 20vw 3vh 20vw;
+}
+.welcome-p{
+	margin: 0px 20vw 3vh 20vw;
+}
+.options-btn-container {
+	width: 40vw;
+    height: 5vh;
+    margin: 2vh 20vw 1vh 20vw;
+}
+.pop-up {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;	
+	background-color: #FFFFFF;	
+	z-index: 60;
+	margin: 0px;
+}
+.scanner-label{
+	display: block;
+    width: 50vw;
+    height: 6vh;
+    border: 1px solid #515151;
+    border-radius: 3px;
+    margin: 10px 25vw;
+}
+.popup-container {
+	position:fixed;
+	height: 75vh;
+	width: 96vw; 
+	border: solid 1px #515151;
+	border-radius: 3px;
+	margin: 10px 2vw;
+	background:#FFFFFF;
+}
+.confirm-btn{
+	display: block;
+	width:inherit;
+	height: inherit; 	
+	background: #ffffff;
+	border: solid 1px #4D4D4D;
+	border-radius:5px;
+	text-align:center;
+	font-size: 24px;
+}
+.confirm-btn div{	
+	display: block;
+	position:absolute;
+	width:inherit;
+	height: inherit;
+	margin:0px; 
+	padding:0px;
+}
+.confirm-btn div p{	
+	margin: 6px;
+}
+.ticket-img img{
+	width: inherit; 
+	height: inherit;
+}
+.family-content {
+	top: 10vh;
+	display:block;
+	position: fixed;
+    height: 90vh;
+	width:100vw; 
+	overflow: hidden; 
+	background: #FFFFFF;
+}
+.family-content-list-container {
+	display:block;
+	position: fixed;
+    height: inherit;
+	width:inherit; 
+    padding:0px;
+	margin:0px;
+	top:10vh; 
+}
+.family-content-list-container div h1{
+	text-align: center;
+    margin: 5px 0px;	
+}
+.adventure-label {
+	width: 50vw; 
+	height: 5vh; 
+	margin: 1px 25vw; 
+}
+.adventure-label div {
+    width: inherit;
+	height: inherit;
+	margin: inherit;
+	border: solid 1px #828282;
+	background: #FFFFFFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px;
+}
+.adventure-label p {
+	text-align: center; 
+	vertical-align:middle;
+	margin:0;
+	padding:5px;
+}
+.next-slide {   
+   float: right;    	
+}
+.prev-slide {
+	float: left;
+}
+.prev-slide div img{		
+	-ms-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	transform:rotate(180deg);	  
+}
+.next-slide, .prev-slide{
+	height: 90vh;
+    width: 20vw;
+}
+.next-slide div, .prev-slide div{
+	height: 5vh;
+    width: inherit;
+    margin: 35vh 0;
+    padding: 0 10vw;	
+}
+.back-btn div img{
+	-ms-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	transform:rotate(180deg);			
+}
+.prev-slide, .next-slide, .back-btn {
+	position: relative;   
+}
+.prev-slide img, .next-slide img{
+	width: 2vw; 
+	height:3vh;
+}	
+.dots{
+    width: 0.1vh;
+    height: 0.1vh;
+    content: " ";
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    margin: 10px 1vw;
+    padding: 5px 1vw;
+    background: #d3d3d3;
+}
+.dots :hover, .active{
+	background:#292929;
+}
+.activity-nav{
+    display: block; margin:0vh;  width: inherit;  
+}
+.activity-nav div{
+	display:inline-block;
+	padding-left: 6vw; 
+	
+}
+.activity-container{
+	display: block;
+    margin: 15px 5vw;
+    width: 90vw;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    padding-bottom: 15vh;
+}
+.activity-container div  {
+	width: inherit;
+}
+.activity-timestamp{
+	display: inline-block;
+	color: #616161;
+	margin: 10px 2vw; 
+	width: 10vw; 
+}
+.activity {
+	display:inline-block;
+	width: 65vw;	
+	word-wrap: normal;	  
+}
+.family-activity{
+	top: 10vh;
+	display:block;
+	position: fixed;
+    height: 90vh;
+	width:100vw; 
+	overflow: hidden; 
+}
+#bot-link-activity{
+	display: inline-block; 
+}	
+#about-nav-bar h2{ 
+	padding: 0 39vw;
+}
+.about-container-content{
+    width: 80vw;
+	height: 85vh;
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 5px 10vw;		
+}
+#family-nav-bar{
+	border:none;
+}		
+hr {
+    width: 20vw;
+}	
+.about-description span{
+    padding-bottom: 30vh;			 
+}
+.back-btn img{
+	width:2vw; 
+	height:3vh;
+	-ms-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.main-menu-btn-activated ::before {
+	width: 0px;
+	height: 0px;
+	content: ">";
+	color: #000000;
+	position: absolute;
+	display: block;
+	left: 30vw;
+}
+.popup-btn-container{
+	width: 30vw;
+	display: block;					
+	position: fixed;
+	margin: 0 35vw;
+}
+.menu-btn {
+	float: left;										
+}	
+.activity-container ::after{
+    content: " ";
+	width: 100vw;
+	height: 17vh;
+	display: block;
+	position: fixed;
+	background: #FFFFFF;
+	background: -webkit-gradient(top , rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	background: -moz-gradient(top,rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	background: -o-gradient(top, rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	background: linear-gradient(to bottom, rgba(255,255,255,0.00), rgba(255,255,255,1.00));					
+	bottom: 0vh;
+	opacity: 0.6;
+	z-index: 1000;
+	left: 0;	
+	filter: blur(5px);
+}
+.about-container-content ::after{
+    content: " ";
+	width: 100vw;					
+	display: block;
+	position: fixed;
+	background: #FFFFFF;
+	background: -webkit-gradient(top , rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	background: -moz-gradient(top, rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	background: -o-gradient(top, rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	background: linear-gradient(to bottom, rgba(255,255,255,0.00), rgba(255,255,255,1.00));
+	bottom: 0vh;
+	opacity: 0.6;
+	z-index: 1000;
+	left: 0;
+	filter: blur(5px);
+}
+.scanner-label div {
+	display: inline-block;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+}
+.about-container-img{	    
+	display: block;
+	position: relative;
+}
+.dots-container {
+    display: block !important;
+    position: fixed;    
+    bottom: 0;
+}
+
+/* desktops/laptops */
+@media screen and (min-width:1025px){
+								p, a {
+									line-height: 1.5em; 
+									font-size: 1.5em;
+								}
+								.welcome-img {
+									margin: 5vh 20vw;
+									width:576px;
+									height:342px; 										
+								}
+								.main-menu-btns a :hover::before{
+									width: 0px;
+									height: 0px;
+									content: ">";
+									color: #000000;
+									position: absolute;
+									display: block;
+								}
+								.main-menu-btns {
+									margin: 8vh 0px 10vh 40vw;
+									width:30vw;
+								}
+								.menu-btn {
+									float: left;
+									height: 30px;
+									margin: 14px;
+								}
+								.about-container-img {
+									width: 15vw;
+									height: 35vh;										
+									margin: 5px 32.5vw;
+								}
+								.about-motto {
+									width: 30vw;
+									text-align: center;
+									word-break: normal;
+									margin: 0px 25vw;
+									font-size: 1em;
+									padding: 10px 0;
+								}
+								.about-description {
+									width: 30vw;
+									text-align: justify;
+									word-break: normal;
+									font-size: .9em;
+									margin: 10px 25vw;
+									padding-top: 20px;
+								}
+								.about-container-content {
+									width: 80vw;
+									height: 85vh;
+									position: relative;
+									overflow-y: auto;
+									overflow-x: hidden;
+									margin: 10px 10vw;
+								}
+								h2 {										
+									display: block;
+									margin: 5px;
+									padding-top: 0px;
+									text-align: center;
+									font-size: 1.6em;				
+								}
+								.bot-icon-link {
+									display: block;
+									float: right;
+									width: 50px !important;
+									height: 50px !important;
+									margin: 10px;
+									border-radius: 50%;
+								}
+								.bot-icon {
+									margin: 0px;
+									padding: 0px 5px;
+									width: 40px;
+									height: 50px;
+								}
+								.bubble p, .chat-btnss-container label div p {
+									font-size: 1.5em;
+								}
+								.timestamp p {									
+									font-size: 1em;	
+									text-align: right;								
+								}
+								#message-input {
+									display: inline-flex;
+									margin: 1px 0px 1px 0px;
+									width: 90vw;
+									height: 3vh;
+									border: none;
+									overflow-x: hidden;
+									overflow-y: auto;
+									word-wrap: break-word;
+									word-break: break-all;
+									resize: none;
+									outline: none;
+									padding: 15px;
+									color: #000;
+									font-size: 1.5em;
+								}
+								.scanner-label div {
+								    font-size: 1.1em;    									
+								}
+								.basic-info, .flight-info {
+									font-weight:bold;
+									font-size:1.5em; 
+									margin-bottom: 10px;
+								}
+								.bot-icon {
+									margin: 0px;
+									padding: 0px 5px;
+									width: 40px;
+									height: 50px;
+								}
+								.main-menu-btns a :hover::before, .main-menu-btns a :active::before {
+									font-size: 1.5em;
+									left: 35vw;
+									position: absolute;
+									display: block;
+								}
+								.about-container-img img {
+									width: inherit;
+									height: inherit;
+								}
+								.dots-container {
+									width: 30vw;
+									height: 1vh;
+									margin: 5vh 48vw;
+								}
+								.activity-timestamp, .activity {
+									font-size: 1.4em;
+								}
+								.bot-icon-activity {
+									margin: 0px;
+									padding: 0px 4px;
+									width: 40px;
+									height: 50px;
+								}
+								.bot-icon-link-activity {
+									display: block;
+									width: 50px !important;
+									height: 50px !important;
+									margin: 7px 45vw 0px 45vw;
+									border-radius: 50%;
+								}
+								.activity-nav div h1 {
+									display: inline-block;
+									width: 60vw;
+									argin: 0px 1vw;
+									text-align: center;
+									font-size: 1.5em;
+								}
+								#message-input {
+									display: inline-flex;
+									margin: 1px 0px 1px 0px;
+									width: 90vw;
+									height: 3vh;
+									border: none;
+									overflow-x: hidden;
+									overflow-y: auto;
+									word-wrap: break-word;
+									word-break: break-all;
+									resize: none;
+									font-size: 1.4em;
+									outline: none;
+									padding: 15px 20px;
+									color: #000;
+								}
+								.adventure-slider-img img{
+									width: 30vw;										
+									text-align: center !important;
+									margin: 2vh 35vw;
+								}
+								.scanner-label div p {
+									margin: 4px;																
+								}
+								#post-btn {
+									float: right;
+									display: inline-block;
+									margin: 15px 20px;
+									width: 3vw;
+									height: 3vw;
+								}
+								.slider-control-container {
+									position: relative;									
+									width: 100vw;
+									z-index: 80;
+									padding: 0px;
+								}								
+								.ticket-img {
+									width: 85vw; 
+									height: 35vh;
+									margin-right: 0px; 
+								}
+								.popup-btn-container{
+									height: 8vh;
+									bottom: 1vh;
+								}	
+								.info{
+									margin:25vh 6vw 0px 6vw;
+								}
+								.about-container-content ::after{												
+												height: 26vh;												
+								}
+}
+
+/* Tablets */
+@media screen  and (min-width: 768px) and (max-width:1024px){
+					
+					.welcome-img {
+						    margin: 15vh 20vw 30px 20vw;
+							align-self: center;
+							width:461px;
+							height:274px; 									
+					}					
+					.about-description{
+							width: 50vw;
+							text-align: justify;
+							word-break: normal;
+							font-size: 1.1em;
+							margin: 10px 15vw;
+							padding-top: 20px;
+					}
+					#message-input {
+							display: inline-flex;
+							margin: 1px 0px 1px 0px;
+							width: 88vw;
+							height: 3vh;
+							border: none;
+							overflow-x: hidden;
+							overflow-y: auto;
+							word-wrap: break-word;
+							word-break: break-all;
+							resize: none;
+							font-size: 1.4em;
+							outline: none;
+							padding: 15px 10px 15px 15px;
+							color: #000;
+					}
+					.about-motto{
+							width: 60vw;
+							text-align: center;
+							word-break: normal;
+							margin: 0px 10vw;
+							font-size: 1.4em;
+							padding: 10px 0;
+					}
+					h2 {
+							display: block;
+							margin: 17px;
+							padding-top: 0px;
+							text-align: center;
+							font-size: 2em;
+					}
+					.menu-btn {
+							float: left;
+							height: 30px;
+							margin: 14px;
+					}
+					.about-container-img{
+							width: 30vw;
+							height: 35vh;								
+							margin: 5px 25vw;
+					}
+					.bubble p, .chat-btnss-container label div p {
+							font-size: 1.4em;
+					}
+					.timestamp p {						
+							font-size: 1em;	
+							text-align: right;					
+					}
+					p, a {
+							line-height: 1.5em; 
+							font-size: 1.4em;
+					}
+					.basic-info, .flight-info {
+							font-weight:bold;
+							font-size:18px; 
+							margin-bottom: 10px;
+					}
+					.bot-icon-link{
+							display: block;
+							float: right;
+							width: 50px !important;
+							height: 50px !important;
+							margin: 10px;
+							border-radius: 50%;
+					}
+					.bot-icon{
+							margin: 0px;
+							padding: 0px 5px;
+							width: 40px;
+							height: 50px;
+					} 
+					.main-menu-btns a :hover::before, .main-menu-btns a :active::before {
+							/*Arrow goes here */							
+							font-size:18px;
+							left: 30vw;						
+					}
+					.about-container-img img {
+							width: inherit;
+							height: inherit;
+					}
+					.family-content-list-container div img {
+							width: 30vw;
+							text-align: center !important;
+							margin: 2vh 35vw;
+					}
+					.family-content-list-container div img {
+							width: 60vw;
+							text-align: center !important;
+							margin: 2vh 20vw;
+					}
+					.dots-container {					
+							width: 30vw;
+							height: 1vh;
+							margin: 5vh 45vw;					
+					}
+					.activity-timestamp, .activity {
+							font-size: 1.4em;
+					}
+					.bot-icon-activity {
+							margin: 0px;
+							padding: 0px 4px;
+							width: 37px;
+							height: 47px;
+					}
+					.bot-icon-link-activity {
+							display: block;
+							width: 50px !important;
+							height: 50px !important;
+							margin: 7px 40vw 0px 40vw;
+							border-radius: 50%;
+					}
+					.activity-nav div h1 {
+							display: inline-block;
+							width: 60vw;
+							argin: 0px 1vw;
+							text-align: center;
+							font-size: 1.5em;
+					}
+					.scanner-label div p {
+							margin: 1.2vh 16vw;
+					}
+					#post-btn {
+							float: right;
+							display: inline-block;
+							margin: 15px 20px 15px 0px;
+							width: 6vw;
+							height: 6vw;					
+					}
+					.slider-control-container {
+							position: relative;  					
+							width: 100vw;
+							z-index: 80;
+							padding: 0px;
+					}
+					.activity-nav div {
+							display: inline-block;
+							padding-right: 8vw;
+					}
+					.ticket-img {
+							width: 85vw; 
+							height: 35vh;
+							margin-right: 0px; 
+					}
+					.popup-btn-container{					
+							height: 8vh;
+							bottom: 1vh;
+					}
+					.info{
+							margin:25vh 6vw 0px 6vw;
+					}
+					.about-container-content ::after{		 	        
+							height: 26vh;					
+					}
+		
+}
+
+/*smartphone landscape */
+@media screen and (min-width:415px) and (max-width:767px){
+						.welcome-img {
+							margin: 11vh 20vw 10px 20vw;
+							width: 267px;
+							height:158px; 										
+						}
+						.activity-timestamp {
+							display: inline-block;
+							color: #616161;
+							margin: 10px 2vw;
+							width: 8vw;
+						}
+						.about-description{
+							width: 78vw;
+							text-align: justify;
+							word-break: normal;
+							font-size: .8em;
+							margin: 10px 5px;
+							padding-top: 20px;								 
+						}
+						#message-input {
+						    display: inline-flex;
+							margin: 1px 0px 1px 0px;
+							width: 82vw;
+							height: 3vh;
+							border: none;
+							overflow-x: hidden;
+							overflow-y: auto;
+							word-wrap: break-word;
+							word-break: break-all;
+							resize: none;
+							font-size: 16px;
+							outline: none;
+							padding: 15px 0px 15px 15px;
+							color: #000;
+						}
+						.about-motto{
+							width: 60vw;
+							text-align: center;
+							word-break: normal;
+							margin: 0px 10vw;
+							font-size: .9em;
+							padding: 10px 0;								
+						}
+						h2 {
+						    display: block;
+							margin: 7px;
+							padding-top: 0px;
+							text-align: center;
+							font-size: 1em;						
+						}
+						.menu-btn {
+							float: left;						
+							margin: 5px;
+						}						
+						.about-container-img{
+							width: 10vw;
+							height: 30vh;						
+							margin: 5px 35vw;
+						}
+						.bubble p, .chat-btnss-container label div p {
+							font-size: .9em;
+						}
+						.timestamp p {						
+							font-size: 8px;		
+							text-align: right;				
+						}
+						p, a {
+							line-height: 1.5em; 
+						}
+						.scanner-label {
+							height: 6vh;
+						}
+						.basic-info, .flight-info {
+							font-weight:bold;
+							font-size:18px; 
+							margin-bottom: 10px;
+						}
+						.bot-icon-link{
+							display: block;
+							float: right;
+							width: 20px !important;
+							height: 20px !important;
+							margin: 5px;
+							border-radius: 50%;
+						}
+						.bot-icon{
+							margin: 0px;
+							padding: 0px 5px;
+							width: 10px;
+							height: 20px;
+						} 
+						 .main-menu-btn :hover::before, .main-menu-btn :visited ::before {
+							/*Arrow goes here */						
+							font-size:18px;
+							left: 30vw;					
+						}
+						.about-container-img img {
+							width: inherit;
+							height: inherit;
+						}
+						.family-content-list-container div img {
+							width: 133px;					
+							margin: 0.1vh 40vw;
+						}
+						
+						.adventure-label div {
+							height: 6vh;						
+						}
+						.adventure-label{
+							height:6vh;
+							margin: 0px 25vw;
+						}
+						.adventure-label p {
+							padding: 0px;
+						}
+						.dots-container {					
+							width: 17vw;
+							height: 6vh;
+							margin: 2vh 42vw;					
+						}
+						.activity-timestamp , .activity {
+							font-size: 0.5em; 
+						}
+						.bot-icon-activity {
+							margin: 0px;
+							padding: 0px 4px;
+							width: 27px;
+							height: 37px;
+						}
+						.bot-icon-link-activity{
+							display: block;
+							width: 50px !important;
+							height: 50px !important;
+							margin: 2px 43vw 0px 43vw;
+							border-radius: 50%;					
+						}
+						.activity-nav div h1{
+							display: inline-block;
+							width: 80vw;
+							margin: 0px -4vw;
+							text-align: center;
+							font-size: 1.5em;
+						}
+						.adventure-slider-img img{
+							width: 60vw;
+							text-align: center !important;
+							margin: 2vh 20vw;
+						}
+						.scanner-label div p {
+							margin: 0px;
+						}
+						.adventure-slider-label {
+							z-index:85;							
+						}
+						.chat-btnss-container label div {
+							margin: 3vh 25vw;
+							width: 50vw;
+							height: 8vh;
+							background: #EAE9F2;
+							text-align: center;
+							padding: 3px;
+						}
+						.main-menu-btns {
+							margin: 2vh 0px 2vh 40vw;
+							width: 30vw;
+						}
+						#post-btn {
+							float: right;
+							display: inline-block;
+							margin: 10px 20px 10px 5px;
+							width: 4vw;
+							height: 4vw;					
+						}
+						.slider-control-container{
+							position: relative;    
+							width: 100vw;
+							z-index: 80;
+							padding: 0px;
+						}
+						.ticket-img {
+							width: 85vw;
+							height: 35vh;
+							margin-right: 0px;
+						}
+						.popup-btn-container {
+							height: 10vh;
+							bottom: 5vh;
+						}
+						.info {
+							margin: 20vh 6vw 0px 6vw;
+						}	
+						.confirm-btn div p {
+							margin: 0px;
+						}
+						.about-container-content ::after{		 	        
+							height: 16vh;					
+						}					
+}
+
+/* smartphones  portrait*/
+@media screen and (max-width:414px){
+					.welcome-img {
+						margin: 15vh 20vw 10px 20vw;
+						align-self: center;
+						width:225px;
+						height:134px; 
+					}
+					.activity-timestamp {
+						display: inline-block;
+						color: #616161;
+						margin: 10px 2vw;
+						width: 8vw;
+					}
+					.about-description{
+						width: 78vw;
+						text-align: justify;
+						word-break: normal;
+						font-size: .8em;
+						margin: 10px 5px;
+						padding-top: 20px;
+					}
+					#message-input {
+						display: inline-flex;
+						margin: 1px 0px 1px 0px;
+						width: 82vw;
+						height: 3vh;
+						border: none;
+						overflow-x: hidden;
+						overflow-y: auto;
+						word-wrap: break-word;
+						word-break: break-all;
+						resize: none;
+						font-size: 16px;
+						outline: none;
+						padding: 15px 0px 15px 15px;
+						color: #000;
+					}
+					.about-motto{
+						width: 60vw;
+						text-align: center;
+						word-break: normal;
+						margin: 0px 10vw;
+						font-size: .9em;
+						padding: 10px 0;
+					}
+					h2 {
+						display: block;
+						margin: 17px;
+						padding-top: 0px;
+						text-align: center;
+						font-size: 1em;
+					}
+					.menu-btn {
+						float: left;
+						height: 30px;
+						margin: 14px;
+					}
+					.about-container-img{
+						width: 40vw; 
+						height:35vh;							
+						margin: 5px 20vw;
+					}
+					.bubble p, .chat-btnss-container label div p {
+						font-size: .9em;
+					}
+					.timestamp p {						
+						font-size: 8px;		
+						text-align: right;				
+					}
+					p, a {
+						line-height: 1.5em; 
+					}
+					.basic-info, .flight-info {
+						font-weight:bold;
+						font-size:18px; 
+						margin-bottom: 10px;
+					}
+					.bot-icon-link{
+						display: block;
+						float: right;
+						width: 35px !important;
+						height: 35px !important;
+						margin: 7px;
+						border-radius: 50%;
+					}
+					.bot-icon{
+						margin: 0px;
+						padding: 0px 5px;
+						width: 25px;
+						height: 35px;
+					} 
+					.main-menu-btns a :hover::before{
+						/*Arrow goes here */
+						font-size:18px;
+						left: 30vw;
+					} 
+					.main-menu-btns a :focus ::before {
+						/*Arrow goes here */
+						outline:none;
+						width: 0px;
+						height: 0px;
+						content: ">";
+						color: #000000;
+						font-size:18px;
+						left: 30vw;
+						position: absolute;
+						display: block;
+					}
+					.about-container-img img {
+						width: inherit;
+						height: inherit;
+					}
+					.family-content-list-container div img {
+						width: 225px; 
+						margin: 2vh 20vw; 
+					}
+					.dots-container {					
+						width: 17vw;
+						height: 4vh;
+						margin: 5vh 41vw;					
+					}
+					.activity-timestamp , .activity {
+						font-size: 0.5em; 
+					}
+					.bot-icon-activity {
+						margin: 0px;
+						padding: 0px 4px;
+						width: 37px;
+						height: 47px;
+					}
+					.bot-icon-link-activity{
+						display:block;
+						width:50px !important; 
+						height:50px !important;
+						margin: 7px 30vw 0px 30vw;
+						border-radius: 50%;
+					}
+					.activity-nav div h1{
+						display: inline-block;
+						width: 80vw;
+						margin: 0px -4vw;
+						text-align: center;
+						font-size: 1.5em;
+					}
+					.adventure-slider-img img{
+							width: 60vw;
+							text-align: center !important;
+							margin: 2vh 20vw;
+					}
+					.scanner-label div p {
+						margin: 7px;					
+					}
+					.adventure-slider-label {
+						z-index:85; 
+					}
+					#post-btn {
+						float: right;
+						display: inline-block;
+						margin: 15px 20px 15px 5px;
+						width: 7vw;
+						height: 7vw;
+					}
+					.slider-control-container{
+						position: relative;    
+						width: 100vw;
+						z-index: 80;
+						padding: 0px;
+					}	
+					.ticket-img {
+						width: 85vw; 
+						height: 35vh;
+						margin-right: 0px; 
+					}
+					.popup-btn-container{
+						height: 7vh;
+						bottom: 2vh;
+					}
+					.info{
+						margin:25vh 6vw 0px 6vw;
+					}
+					.about-container-content ::after{		 	        
+						height: 16vh;					
+					}					
+}
+
+
+
+

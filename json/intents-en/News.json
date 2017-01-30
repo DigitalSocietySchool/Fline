@@ -1,0 +1,51 @@
+{
+  "templates": [
+    "news"
+  ],
+  "userSays": [
+    {
+      "id": "8592b26b-a9be-4b58-86dd-b11c25a79ea0",
+      "data": [
+        {
+          "text": "news"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "a5e62718-88a4-4ca4-826c-32888b6bbf13",
+  "name": "News",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "news.search",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@sys.geo-city",
+          "name": "location",
+          "value": "Amsterdam, Netherlands",
+          "prompts": [
+            "Here in Netherlands?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "This is what happened while you were in the air"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

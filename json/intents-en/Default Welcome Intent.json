@@ -1,0 +1,44 @@
+{
+  "templates": [
+    "intro welcome"
+  ],
+  "userSays": [
+    {
+      "id": "00d48f1a-3dc3-4bab-a13a-8cce0132df0e",
+      "data": [
+        {
+          "text": "intro welcome"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ebf46b10-caea-44bf-8c44-9a5975ab62cd",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "daytimegreeting , Welcome to the Belt family. One of our family members will help you get in touch with your baggage."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

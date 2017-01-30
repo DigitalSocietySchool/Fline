@@ -1,0 +1,98 @@
+{
+  "templates": [
+    "amsterdam tour",
+    "tourism",
+    "traveling",
+    "sightseeing",
+    "recommendation for sightseeing",
+    "recommendation for travel"
+  ],
+  "userSays": [
+    {
+      "id": "2678b261-5093-49e9-908a-42dfe7e61387",
+      "data": [
+        {
+          "text": "amsterdam tour"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5e5c8b06-c481-4e96-baa5-61decc33518a",
+      "data": [
+        {
+          "text": "tourism"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "0b2ab056-d547-4d9c-9f8b-a90c4cf37adf",
+      "data": [
+        {
+          "text": "traveling"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8e5ad1f5-0ad3-4329-a49d-b96aa761638a",
+      "data": [
+        {
+          "text": "sightseeing"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dc0d082c-36e1-4822-ad7c-f3bb9d67e3a4",
+      "data": [
+        {
+          "text": "recommendation for sightseeing"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d1ae00d2-bfc1-432e-aecd-08cf9c27fbe4",
+      "data": [
+        {
+          "text": "recommendation for travel"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "76522374-3b01-49c4-866c-0893d442bcaa",
+  "name": "tourism",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here you can find informations about Dutch heritage and tourism."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

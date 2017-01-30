@@ -1,0 +1,46 @@
+{
+  "templates": [
+    "Where is my bag now?"
+  ],
+  "userSays": [
+    {
+      "id": "d2b24989-aafc-49bc-ba4b-ea69ca25d3e8",
+      "data": [
+        {
+          "text": "Where is my bag now?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "3cb2876d-454f-4b11-982e-5b3048ae6282",
+  "name": "Where is my bag now?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Your baggage is being unloaded from the plane. This means it can take a while before it gets here.",
+            "Your baggage is about to arrive. Make sure you don\u0027t forget anything in the baggage reclaim."
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,39 @@
+{
+  "templates": [
+    "No, thank you!"
+  ],
+  "userSays": [
+    {
+      "id": "3c482390-ae18-4ff5-bb8c-a5ba0944a212",
+      "data": [
+        {
+          "text": "No, thank you!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "c4b33067-8b08-4b17-9b01-7995683d7553",
+  "name": "No thank you",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You are welcome !"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
